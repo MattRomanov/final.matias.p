@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  /* background: rgb(236, 130, 201); */
+  background-color: rgb(255 210 230 / 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: #fff;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0, 1);
+}
+.container .left_Side {
+  position: relative;
+  background: #39a7a3;
+  padding: 40px;
+}
+.profileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profileText .imgBx {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profileText .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profileText h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.profileText h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+.Contactos {
+  padding-top: 20px;
+}
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.Contactos ul {
+  position: relative;
+}
+.Contactos ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.Contactos ul li .icon {
+  width: 30px;
+  font-size: 18px;
+  color: #1a036d;
+  display: inline-block;
+  text-align: center;
+}
+
+.Contactos ul li span {
+  color: #fff;
+  font-weight: 300;
+}
+.Contactos.educación li {
+  margin-bottom: 15px;
+}
+.Contactos.educación h5 {
+  color: #1a036d;
+  font-weight: 500;
+}
+.Contactos.educación h4:nth-child(2) {
+  color: #fff;
+  font-weight: 500;
+}
+.Contactos.educación h4 {
+  color: #fff;
+  font-weight: 300;
+}
+.Contactos.idiomas .percent {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #081921;
+  display: block;
+  margin-top: 5px;
+}
+.Contactos.idiomas .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.container .right_Side {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+  padding-top: 20px;
+}
+.Acerca_de_mi {
+  margin-bottom: 50px;
+}
+.Acerca_de_mi:last-child {
+  margin-bottom: 0;
+}
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+p {
+  color: #333;
+}
+
+.habilidades .box, .idiomas .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.habilidades .box h4, .idiomas .box h4 {
+  text-transform: uppercase;
+  color: #848c99;
+  font-weight: 500;
+}
+.habilidades .box .percent, .idiomas .box .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #f0f0f0f0;
+}
+.habilidades .box .percent div, .idiomas .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+.Intereses ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.Intereses ul li {
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  margin: 10px;
+}
+.Intereses ul li .fa {
+  color: #03a9f4;
+  font-size: 18px;
+  width: 20px;
+}
+
+.Acerca_de_mi .box {
+  flex-direction: column;
+  border-bottom: 1px solid #003147;
+}
+.Acerca_de_mi .box .año_hospital {
+  margin-bottom: 5px;
+}
+.Intereses ul {
+  grid-template-columns: repeat(1, 1fr);
+}
+.habilidades .box, .idiomas .box {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.parrafo-experiencia {
+  font-size: 18px;
+}
+
+.titulo-experiencia {
+  color: #003147;
+}
+
+.accordion {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.panel {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+}
